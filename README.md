@@ -4,17 +4,14 @@ Embedded Web Server using Boost.Asio
 
 ### What is this repository for? ###
 
-* It is a sample of HTTP client and server made asynchronous using Boost.Asio
-* Server is able to serve 8k connections per second on Linux
-* Stress test client included
-* To get list of executable options use "-h" or "--help"
+* It is a sample of HTTP client and server made asynchronous using Boost.Asio.
+* Server is able to serve 10k connections per second.
 
 ### How do I get set up? ###
 
-* Use CMake 3.0.0+, installer link: https://cmake.org/download
-* For VS 2015: run configure.cmd from build/vs2015 directory
-* For VS 2013: run configure.cmd from build/vs2013 directory
-* For VS 2010: run configure.cmd from build/vs2010 directory
-* For Linux: run build.sh from build/linux directory
- * Under Linux apropriate file descriptors limits must be set using "ulimit -n 10000" before starting EWS server
+* Use CMake 3.8+
+* Unpack sources
+* For VS 2017: run configure.cmd from vs2017 directory
+* For Linux: run build.sh from linux directory
 * Binaries will be created in "bin" directory
+* Under Linux apropriate file descriptors limits must be set using "ulimit -n fd_limit_number" before starting EWS server
